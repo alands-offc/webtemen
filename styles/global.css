@@ -1,0 +1,132 @@
+/* Container utama untuk halaman */
+.container {
+  padding: 20px;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Bagian atas halaman yang berisi gambar anime, judul, genre, dan trailer */
+.topSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* Gambar anime landscape di atas */
+.image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Container untuk judul, genre, dan trailer */
+.titleGenreTrailer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Gaya untuk judul anime di sebelah kiri */
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+/* Gaya untuk genre yang ada di bawah judul anime */
+.genre {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Trailer kecil di kanan */
+.trailer {
+  flex: 0 0 300px;
+  margin-left: 20px;
+}
+
+.trailer iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* Bagian deskripsi/sinopsis */
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  max-width: 1000px;
+}
+
+/* Bagian info lebih lanjut */
+.moreInfo {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.infoItem {
+  background-color: #1f1f1f;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Gaya untuk bagian cast dan episodes */
+.castSection, .episodesSection {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.castList, .episodesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.castItem, .episodeItem {
+  width: 200px;
+  text-align: center;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.castImage, .episodeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.actorName, .episodeTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.characterName, .episodeDescription {
+  font-size: 16px;
+}

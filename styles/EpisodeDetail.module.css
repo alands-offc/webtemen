@@ -1,0 +1,175 @@
+/* EpisodeDetail.module.css */
+
+/* Container utama */
+.container {
+    width: 100%; /* Mengubah max-width menjadi width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/* Wrapper video */
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    width: 100%; /* Mengubah max-width menjadi width */
+    background-color: #000;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+}
+
+
+/* Pilihan server/kualitas */
+.serverSelectWrapper {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.serverSelectLabel {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.serverSelect {
+    padding: 10px;
+    background-color: #282828;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    box-sizing: border-box; /* Menambahkan properti ini */
+}
+
+.videoPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Tombol navigasi dan informasi */
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buttonGroup button {
+    padding: 10px 20px;
+    background-color: #282828;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* Menambahkan properti ini */
+}
+
+.buttonGroup button:hover {
+    background-color: #444;
+}
+
+.prevButton {
+    float: left;
+}
+
+.nextButton {
+    float: right;
+}
+
+/* Judul dan detail episode */
+.details {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box; /* Menambahkan properti ini */
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ffd700;
+    text-align: center;
+}
+
+.details p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.details strong {
+    color: #ffd700;
+}
+
+/* Bagian komentar */
+.commentsSection {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.commentsTitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.commentInput {
+    padding: 10px;
+    background-color: #282828;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100px;
+}
+
+.commentSubmitButton {
+    padding: 10px;
+    background-color: #282828;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+    align-self: flex-end;
+}
+
+.commentSubmitButton:hover {
+    background-color: #444;
+}
+
+.commentList {
+    margin-top: 20px;
+}
+
+.commentItem {
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}

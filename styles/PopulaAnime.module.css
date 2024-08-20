@@ -1,0 +1,49 @@
+/* styles/PopulaAnime.module.css */
+
+.anime-slide {
+  height: 200px; /* Diperkecil dari 250px ke 200px */
+}
+
+.anime-slide img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.anime-slide:hover img {
+  transform: scale(1.05); /* Membesarkan gambar sedikit saat dihover */
+}
+
+.anime-slide i {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.anime-slide:hover i {
+  opacity: 1;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #fff; /* Warna tombol navigasi */
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+  border-radius: 50%;
+  width: 30px; /* Diperkecil dari 40px ke 30px */
+  height: 30px; /* Diperkecil dari 40px ke 30px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Menggelapkan latar belakang saat dihover */
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007bff; /* Warna biru untuk pagination yang aktif */
+}

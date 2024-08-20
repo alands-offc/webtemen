@@ -1,0 +1,223 @@
+/* Container umum untuk halaman */
+.container {
+  padding: 20px;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Header untuk gambar dan informasi anime */
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Gaya untuk gambar anime dengan orientasi lanskap */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 9000px; /* Atur sesuai kebutuhan */
+  aspect-ratio: 16/9; /* Mengatur rasio aspek lanskap */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Overlay untuk label di dalam gambar */
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageWrapper:hover .imageOverlay {
+  opacity: 1;
+}
+
+/* Informasi status dan tanggal rilis di dalam gambar */
+.statusRelease {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #1f1f1f; /* Latar belakang sama dengan sinopsis */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Informasi teks di bawah gambar anime */
+.info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Judul anime */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Genre dan detail di bawah judul */
+.genreLinks {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px; /* Jarak antara genre dan sinopsis */
+}
+
+.genre {
+  background-color: #1f1f1f;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Deskripsi anime */
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Jarak antara sinopsis dan section berikutnya */
+}
+
+/* Wrapper dan gaya untuk deskripsi anime */
+.descriptionWrapper {
+  background-color: #1f1f1f; /* Latar belakang abu-abu untuk sinopsis */
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff; /* Warna teks sinopsis */
+  margin-top: 30px; /* Jarak antara gambar dan sinopsis */
+  max-height: 200px; /* Mengatur tinggi maksimum untuk scroll */
+  overflow-y: auto; /* Scroll jika konten melebihi tinggi maksimum */
+}
+
+/* Section untuk status dan release date di bawah sinopsis */
+.statusReleaseWrapper {
+  background-color: #1f1f1f; /* Latar belakang sama dengan sinopsis */
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px; /* Jarak antara sinopsis dan status/release date */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Jarak antar elemen status dan release date */
+}
+
+/* Teks untuk status dan release date */
+.statusReleaseItem {
+  font-size: 16px;
+  margin-bottom: 10px; /* Jarak antara item status dan release date */
+}
+
+/* Section untuk cast dan episodes */
+.castSection, .episodesSection {
+  margin-top: 40px;
+}
+
+/* Judul untuk setiap section */
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* List untuk cast dan episodes */
+.castList, .episodesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Item untuk setiap cast dan episode */
+.castItem, .episodeItem {
+  width: 200px;
+  text-align: center;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Gaya untuk gambar cast dan episode */
+.castImage, .episodeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Nama aktor atau judul episode */
+.actorName, .episodeTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Nama karakter atau deskripsi episode */
+.characterName, .episodeDescription {
+  font-size: 16px;
+}
+
+/* Gaya untuk trailer */
+.trailerSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.trailer iframe {
+  width: 560px;
+  height: 315px;
+  border-radius: 10px;
+}
+
+/* Gaya untuk item episode yang bisa ditekan */
+.episodeItem {
+  width: 200px;
+  text-align: center;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+  cursor: pointer; /* Menambahkan cursor pointer */
+}
+
+/* Efek hover pada episode item */
+.episodeItem:hover {
+  background-color: #333; /* Warna latar belakang berubah saat hover */
+  transform: scale(1.05); /* Skala sedikit lebih besar saat hover */
+}
+
+/* Efek klik pada episode item */
+.episodeItem:active {
+  background-color: #555; /* Warna latar berubah saat item ditekan */
+  transform: scale(0.95); /* Sedikit mengecil saat ditekan */
+}
+
+/* Nama aktor atau judul episode */
+.actorName, .episodeTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Nama karakter atau deskripsi episode */
+.characterName, .episodeDescription {
+  font-size: 16px;
+}

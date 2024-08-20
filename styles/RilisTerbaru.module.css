@@ -1,0 +1,120 @@
+.rilisTerbaruContainer {
+    padding: 15px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.animeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Jarak antar item dalam flex container */
+}
+
+.animeCard {
+    background-color: #282828;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: calc(20% - 10px); /* Lebar kartu untuk 5 kartu per baris */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi pada hover dan klik */
+}
+
+.animeCard:hover {
+    transform: scale(1.05); /* Membesarkan kartu saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada hover */
+}
+
+.animeCard:active {
+    transform: scale(0.98); /* Mengurangi ukuran kartu sedikit saat diklik */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Menyesuaikan bayangan saat diklik */
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    transition: opacity 0.3s ease; /* Efek transisi untuk gambar */
+}
+
+.imageWrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Efek transisi untuk gambar */
+}
+
+.animeCard:hover .imageWrapper img {
+    transform: scale(1.1); /* Membesarkan gambar sedikit saat hover pada kartu */
+    opacity: 0.8; /* Mengurangi opacity gambar saat hover */
+}
+
+.playIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.animeCard:hover .playIcon {
+    opacity: 1; /* Menampilkan ikon play saat hover */
+}
+
+.typeLabel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.episodeLabel {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: rgba(128, 128, 128, 0.8);
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.statusLabel {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.animeInfo {
+    padding: 6px;
+    color: #d0d0d0;
+    font-size: 12px;
+}

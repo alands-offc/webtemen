@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* Warna latar belakang header */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    width: 150px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 20px; /* Jarak antara logo dan elemen berikutnya */
+    filter: contrast(150%) drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7)); /* Menambahkan bayangan */
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .nav a:hover {
+    color: #0070f3; /* Warna saat hover */
+  }
+  
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Jarak antara navigasi dan bar pencarian */
+  }
+  
+  .searchInput {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .searchButton {
+    background-color: #0070f3;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .searchButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .searchButton .fa-search {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .clock {
+    margin-left: 20px; /* Jarak antara elemen dan jam */
+    font-size: 1rem; /* Ukuran font jam */
+    color: #333; /* Warna font jam */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2b6cb0;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    color: #cbd5e0;
+  }
+  
+  .currentTime {
+    font-weight: bold;
+  }
+  

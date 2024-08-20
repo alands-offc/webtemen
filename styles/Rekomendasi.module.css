@@ -1,0 +1,92 @@
+.container {
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.genreTabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.genreTab {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.genreTab.active {
+    background-color: #00bcd4; /* Warna untuk tab yang aktif */
+    color: white;
+}
+
+.animeGrid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.animeCard {
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 150px; /* Ukuran kartu lebih kecil */
+    transition: transform 0.3s; /* Efek animasi goyang */
+}
+
+.animeImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s; /* Efek animasi pada gambar */
+}
+
+
+.episodeLabel, .statusLabel, .typeLabel {
+    font-size: 0.7em; /* Ukuran font lebih kecil */
+    padding: 2px 4px; /* Padding yang lebih kecil */
+}
+
+.episodeLabel {
+    position: absolute;
+    bottom: 69px; /* Disesuaikan dengan ukuran kartu */
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 3px;
+}
+
+.statusLabel {
+    position: absolute;
+    bottom: 69px; /* Disesuaikan dengan ukuran kartu */
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 3px;
+}
+
+.typeLabel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red; /* Mengubah warna menjadi merah */
+    color: white;
+    border-radius: 3px;
+}
+
+.title {
+    margin-top: 5px;
+    font-size: 0.9em; /* Ukuran font lebih kecil */
+    font-weight: bold;
+    text-align: center;
+}
